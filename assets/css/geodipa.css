@@ -209,3 +209,34 @@ footer .copy{border-top:1px solid var(--line);margin-top:2.5rem;padding:1.2rem 0
 .loc .ic{font-size:2.2rem}
 @media(min-width:992px) and (max-width:1199px){.navbar .nav-link{padding-left:.45rem;padding-right:.45rem;font-size:.82rem}}
 @media(min-width:1200px){.navbar .nav-link{padding-left:.55rem;padding-right:.55rem}}
+@media (max-width: 767px) {
+  html, body { overflow-x: hidden; max-width: 100%; }
+  section { overflow-x: clip; padding: 60px 0; }
+
+  .navbar-brand { font-size: .9rem; }
+  .navbar-brand img { height: 36px; }
+  .navbar-brand small { font-size: .55rem; }
+
+  #hero { padding-top: 100px; padding-bottom: 80px; }
+  #hero h1 { font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.15; }
+  #hero .d-flex { flex-direction: column; align-items: stretch; }
+  .hero-tag { font-size: .72rem; }
+  .hero-pic .badge-f { left: 8px; bottom: 16px; }
+  .scroll-hint { display: none; }
+
+  .photo-frame::before { inset: 14px -4px -4px 14px; }
+
+  h2.display-5, h2.display-6 { font-size: 1.6rem; }
+  .stat { padding: 1rem .5rem; }
+  .stat .n { font-size: 2.3rem; }
+
+  .flip { height: 400px; }
+  .flip .f, .flip .b { padding: 1.3rem; }
+  .flip .f h3 { font-size: 1.35rem; }
+  .flip .b { font-size: .84rem; line-height: 1.5; overflow-y: auto; }
+  .flip .b p { margin-bottom: .6rem; }
+
+  .mapbox { aspect-ratio: 4 / 3; min-height: 280px; }
+
+  img { max-width: 100%; }
+}
